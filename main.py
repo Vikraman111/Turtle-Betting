@@ -6,14 +6,13 @@ all_turt = []
 flag = False
 scr = Screen()
 scr.setup(width=500, height = 400)
-user_bet = scr.textinput(title = "Make your bet",prompt="Bet on which color will win")
+user_bet = scr.textinput(title = "Make your bet",prompt="Bet on which color will win\nviolet indigo blue green yellow orange red\n CHECK YOUR TERMINAL FOR RESULTS!")
 for i in range(7):
     new_turt = Turtle()
     new_turt.penup()
     new_turt.color(colors[i])
     new_turt.shape("turtle")
     new_turt.goto(-230, 150 - (40 * i))
-    new_turt.pendown()
     all_turt.append(new_turt)
 
 #Make Race Start Only After Bet Has Been Made
